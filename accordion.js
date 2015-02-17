@@ -20,7 +20,6 @@ var pullCard = function(info) {
 
 $(".accordion").on("click", function(evt){
 
-
   var $clickedHeader = $(this);
 
   $(".sections").removeClass("active");

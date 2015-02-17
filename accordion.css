@@ -6,11 +6,9 @@
 
 .sections {
 	width: 100%;
-	height: 220px;
-	transition-property: ;
 }
 
-.oneSubHead {
+.subhead {
 	background-image: url("card-catalog.png");
 	width: 100%;
 	height: 64px;
@@ -27,13 +25,13 @@
 	-webkit-margin-after: 0px;
 }
 
-.oneBody {
+.body {
 	width: 100%;
-	height: 156px;
+	max-height: 0px;
 	background-color: #D6B890;
 	position: relative;
 	top: 51px;
-	visibility:hidden;
+	overflow: hidden;
 }
 
 .paragraphText {
@@ -43,15 +41,8 @@
 	padding: 32px;
 	-webkit-margin-before: 0px;
 	-webkit-margin-after: 0px;
-	transition: height 600ms;
-	visibility: hidden;
-}
+	transition: all 600ms;
 
-
-.twoSubHead {
-	background-image: url("card-catalog.png");
-	width: 100%;
-	height: 64px;
 }
 
 .subHeadTitleTwo {
@@ -65,22 +56,6 @@
 	-webkit-margin-after: 0px;
 }
 
-.twoBody {
-	width: 100%;
-	height: 156px;
-	background-color: #D6B890;
-	position: relative;
-	top: 51px;
-	visibility:hidden;
-
-}
-
-.threeSubHead {
-	background-image: url("card-catalog.png");
-	width: 100%;
-	height: 64px;
-}
-
 .subHeadTitleThree {
 	position: relative;
 	font-size: 12px;
@@ -92,16 +67,6 @@
 	-webkit-margin-after: 0px;	
 }
 
-.threeBody {
-	width: 100%;
-	height: 156px;
-	background-color: #D6B890;
-	position: relative;
-	top: 51px;
-	visibility:hidden;
-
-}
-
-sections.active .content {
-	height: 64px;
+.sections.active .body {
+	max-height: none;
 }
